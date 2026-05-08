@@ -1,0 +1,38 @@
+# --- Dependencias (No se suben porque son muy pesadas) ---
+backend/vendor/
+react/node_modules/
+
+# --- Configuración y Secretos (Seguridad: NUNCA subas estos) ---
+backend/.env
+backend/.env.backup
+react/.env
+react/.env.local
+react/.env.development.local
+react/.env.test.local
+react/.env.production.local
+
+# --- Compilación (Archivos generados automáticamente) ---
+react/dist/
+react/build/
+react/out/
+
+# --- Laravel Específico ---
+backend/storage/*.key
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*.log
+backend/bootstrap/cache/*
+
+# --- Logs y archivos temporales ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# --- Archivos del Sistema / Editores ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
