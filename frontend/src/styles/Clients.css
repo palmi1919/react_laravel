@@ -1,0 +1,26 @@
+.clients-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.clients-stat-card {
+  border-radius: 14px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+  transition: transform 0.2s ease !important;
+}
+
+.clients-stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.top-client {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.clients-table-card {
+  border-radius: 14px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+}
