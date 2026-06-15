@@ -66,24 +66,7 @@ export default function Dashboard() {
       changeType: 'up',
       description: '12 nuevos esta semana',
     },
-    {
-      title: 'Ventas del Día',
-      value: `$${dashboardStats.ventasHoy.toLocaleString('es-MX', { minimumFractionDigits: 2 })}`,
-      icon: <ShoppingCartOutlined />,
-      color: '#22C55E',
-      change: 12.8,
-      changeType: 'up',
-      description: '23 transacciones hoy',
-    },
-    {
-      title: 'Ganancias Totales',
-      value: `$${(dashboardStats.ganancias / 1000).toFixed(1)}k`,
-      icon: <DollarOutlined />,
-      color: '#3B82F6',
-      change: 8.4,
-      changeType: 'up',
-      description: 'Junio 2024',
-    },
+
     {
       title: 'Stock Bajo',
       value: dashboardStats.bajosStock,
@@ -93,37 +76,13 @@ export default function Dashboard() {
       changeType: 'up',
       description: 'Requieren reabastecimiento',
     },
-    {
-      title: 'Clientes Activos',
-      value: dashboardStats.clientesActivos,
-      icon: <TeamOutlined />,
-      color: '#8B5CF6',
-      change: 3.1,
-      changeType: 'up',
-      description: 'Últimos 30 días',
-    },
-    {
-      title: 'Pedidos Pendientes',
-      value: dashboardStats.pedidosPendientes,
-      icon: <ClockCircleOutlined />,
-      color: '#EF4444',
-      change: 4.5,
-      changeType: 'down',
-      description: 'Por procesar',
-    },
+
   ]
 
   return (
     <div className="dashboard-page">
       {/* Welcome banner */}
-      <div className="dashboard-banner">
-        <div>
-          <h2 className="dashboard-greeting">Buenos días, Administrador</h2>
-          <p className="dashboard-date">
-            Martes, 4 de junio de 2024 &mdash; Resumen diario de Abarrotes Guerrero
-          </p>
-        </div>
-      </div>
+
 
       {/* Stat cards */}
       <Row gutter={[16, 16]} className="stats-row">
@@ -136,15 +95,6 @@ export default function Dashboard() {
 
       {/* Charts row */}
       <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
-        <Col xs={24} lg={16}>
-          <Card
-            title="Ventas de la Semana"
-            className="chart-card"
-            extra={<Tag color="green">Esta semana</Tag>}
-          >
-
-          </Card>
-        </Col>
 
         <Col xs={24} lg={8}>
           <Card title="Actividad Reciente" className="chart-card activity-card">
